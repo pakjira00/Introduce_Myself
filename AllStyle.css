@@ -1,0 +1,228 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    background-color: white;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    background: white;
+    padding: 25px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    display: flex;
+    height: 20px;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+}
+.nav a{
+    color: #000;
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 1rem;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+}
+.nav a::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background-image: linear-gradient(to right,#000000,#000000);
+    opacity: 0;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    transition: 0.4s;
+}
+.nav a:hover::after{
+    width: 50%;
+    opacity: 1;
+}
+
+
+.box1{
+   background-color:white;
+   color: black;
+   text-align: center;
+   width: 100%;
+   padding: 50px;
+   margin-left: 30px;
+}
+.box2{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box3{
+    background-color: black;
+    color: whitesmoke;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    margin-top: 50px;
+}
+.box4{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.box5{
+    background-color: black;
+    padding: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.box6{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color:white;
+}
+.box7{
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.box8{
+    background-color: black;
+    padding: 30px;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-items: center;
+    margin: 80px;
+}
+.grid4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 20px;
+    justify-items: center;
+    margin-top: 50px;
+}
+.grid5{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    place-content: center;
+    background-image: url('6625.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.pht1{
+    width: auto;
+    height: auto;
+}
+.pht2{
+    width: 550px;
+    height: 500px;
+}
+.pht3{
+    width: 200px;
+    height: 200px;
+}
+.pht4{
+    width: 1250px;
+    height: 640px;
+}
+.pht5{
+    width: 400px;
+    height: 450px;
+}
+.pht6{
+    width: 500px;
+    height: 600px;
+}
+
+.tx1{
+    font-size: 15px;
+    font-weight: bold;
+}
+.tx2{
+    font-size: 20px;
+    font-weight: 1rem;
+}
+
+button{
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    margin: 20px;
+    transition: all 0.25s ease;
+}
+.bt1{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    transition: all 0.25s ease;
+}
+.bt1:hover{
+    transform: translate(-12px,-12px);
+}
+.bt1:hover::before{
+    transform: translate(12px,12px);
+}
+.bt1:hover::after{
+    transform: translate(6px,6px);
+}
+.bt1:hover::after,.bt1:hover::before{
+    content: "";
+    position: absolute;
+    opacity: 03;
+    border-radius: inherit;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 10px;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
